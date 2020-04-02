@@ -1,0 +1,52 @@
+:root {
+  --bg-color: rgba(0, 0, 0, 0.8);
+  --light-color: rgba(255, 255, 255, 0.9);
+  --default-font-size: 16px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--default-font-size);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+input,
+textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: darken($color: #fff, $amount: 20);
+  }
+}

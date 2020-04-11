@@ -25,7 +25,7 @@ export default {
   rootDir: __dirname,
   loading: { color: 'lightblue' },
   css: ['~/assets/css/index.scss'],
-  plugins: [],
+  plugins: ['~/plugins/vue-lazyload.js'],
   buildModules: ['@nuxtjs/eslint-module'],
   modules: [
     '@nuxtjs/style-resources',

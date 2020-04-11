@@ -1,4 +1,4 @@
-@for $i from 0 through 5 {
+@for $i from 1 through 5 {
   .mt-#{$i} {
     margin-top: #{$i}rem !important;
   }
@@ -54,7 +54,7 @@
   }
 }
 @for $i from 0 through 5 {
-  @media (min-width: map_get($breakpoints, 'tablet-wide')) and (max-width: map_get($breakpoints, 'desktop')) {
+  @media (max-width: map_get($breakpoints, 'tablet-wide')) {
     .mt-lg-#{$i} {
       margin-top: #{$i}rem;
     }
@@ -102,7 +102,7 @@
       padding-bottom: #{$i}rem;
     }
   }
-  @media (min-width: map_get($breakpoints, 'tablet')) and (max-width: map_get($breakpoints, 'tablet-wide')) {
+  @media (max-width: map_get($breakpoints, 'tablet')) {
     .mt-md-#{$i} {
       margin-top: #{$i}rem;
     }
@@ -150,7 +150,7 @@
       padding-bottom: #{$i}rem;
     }
   }
-  @media (min-width: map-get($breakpoints, 'phablet')) and (max-width: map_get($breakpoints, 'tablet')) {
+  @media (max-width: map-get($breakpoints, 'phablet')) {
     .mt-sm-#{$i} {
       margin-top: #{$i}rem;
     }
@@ -198,7 +198,7 @@
       padding-bottom: #{$i}rem;
     }
   }
-  @media (min-width: 1px) and (max-width: map-get($breakpoints, 'phablet')) {
+  @media (max-width: map-get($breakpoints, 'phone')) {
     .mt-xs-#{$i} {
       margin-top: #{$i}rem;
     }

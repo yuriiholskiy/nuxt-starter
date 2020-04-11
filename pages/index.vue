@@ -3,7 +3,6 @@
     <h1 class="head text-center pt-2">
       nuxt starter
     </h1>
-    <List />
   </div>
 </template>
 
